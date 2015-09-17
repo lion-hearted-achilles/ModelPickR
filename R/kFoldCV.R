@@ -18,7 +18,8 @@
 ##'         for the cross validated sub-samples made by the K-Fold
 ##'         Cross Validation algorithm.
 ##'
-##'
+##' @author Ben Clark
+##' 
 
 kFoldCV <- function(data, formula, k = 4) {
 
@@ -34,7 +35,7 @@ kFoldCV <- function(data, formula, k = 4) {
   n <- as.double(length(data[,1]))
   group.size <- round((n / k), digits = 0)
 
-  ## I'll make a list of the indices of each group...? Yes?
+  ## I'll make a list of the indices of each group.
   groups <- list()
   length(groups) <- k
 

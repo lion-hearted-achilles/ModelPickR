@@ -17,6 +17,8 @@
 ##' @return a number that shows the mean squared prediction error produced by
 ##'         the testing/training cross validation algorithm.
 ##'
+##' @author Ben Clark
+##' 
 
 TestTrainCV <- function(data, formula, testSize = 10) {
 

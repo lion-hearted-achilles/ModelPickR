@@ -11,6 +11,11 @@
 ##'
 ##' @param response a string denoting which variable is the response.
 ##'                 note: this must EXACTLY match the column's header.
+##' 
+##' @param evalType a string containing either 'Ar2', 'AIC', or 'BIC'
+##'                 corresponding to the evaluation criterion you'd 
+##'                 like to use when evaluating model fitness,
+##'                 defaults to \code{Adjusted R^2}.
 ##'
 ##' @param makeModels a boolean that decides whether or to return all the
 ##'                   models in a list. \code{TRUE} by default.
@@ -24,22 +29,14 @@
 ##'
 ##'
 
-ForwardSelect <- function(data, response,
+ForwardSelect <- function(data, response, evalType = 'Ar2',
                           makeModels = TRUE, suppressOutput = FALSE) {
 
   ## Just a few little pre-checks here...
   stopifnot(is.data.frame(data),
-            response %in% names(data))   # TODO !!! Add to this...
+            response %in% names(data),
+            evalType %in% c('Ar2', 'AIC', 'BIC'))   # TODO !!! Add to this...
 
-  recursiveForwardSelector <- function(data, n, max, models) {
-
-    ## Recursive Base Case!
-    if (n > max)
-      return(models)
-
-    ## Otherwise we'll just keep trucking...
-
-
-  }
+  
 
 }

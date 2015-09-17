@@ -21,8 +21,11 @@
 ##'
 ##'
 ##' @return a list of linear models, all the best found while using
-##'         backward elimination! Unless
-##'
+##'         backward elimination! Unless makeModels is equal to 
+##'         \code{FALSE} then it returns nothing.
+##' 
+##' @author Ben Clark
+##' 
 
 BackwardElim <- function(data, response,
                          makeModels = TRUE, suppressOutput = FALSE) {

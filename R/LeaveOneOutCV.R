@@ -6,6 +6,10 @@
 ##' This function just takes a data set and a linear model and calculates
 ##' the mean squared prediction error using the Leave-One-Out Cross Validation
 ##' algorithm.
+##' 
+##' Note to self, I used this algorithm and compared it to answers provided
+##' to practice questions in my STAT406 course, and I got the same answers!
+##' I think I trust this function thoroughly...
 ##'
 ##' @param data a dataframe containing the data you want to check your model.
 ##'             with.
@@ -13,7 +17,9 @@
 ##' @param formula a 'formula' object that can be used to build linear models.
 ##'
 ##' @return a number (the MSE of the L.O.O. C.V.)
-##'
+##' 
+##' @author Ben Clark
+##' 
 
 LeaveOneOutCV <- function(data, formula) {
 
