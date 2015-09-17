@@ -12,7 +12,7 @@
 ##' @param formula an R 'formula' object to determine the linear model
 ##'                to be constructed.
 ##'
-##' @param k the number of folds to use. Defaults to 4.
+##' @param k the number of folds to use, Defaults to 5.
 ##'
 ##' @return a number, specifically the mean squared prediction error
 ##'         for the cross validated sub-samples made by the K-Fold
@@ -21,7 +21,7 @@
 ##' @author Ben Clark
 ##' 
 
-kFoldCV <- function(data, formula, k = 4) {
+kFoldCV <- function(data, formula, k = 5) {
 
   ## Some simple input checks...
   stopifnot(is.data.frame(data),

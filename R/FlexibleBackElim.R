@@ -5,10 +5,9 @@
 ##' 
 ##' This function performs backward elimination based on a user-provided
 ##' model fitness evaluation criterion. So this is a slightly more robust
-##' version of the existing BackwardElim function.
-##' 
-##' This is probably the more traditional version of Backward Elimination,
-##' so it's likely going to be more useful than my previous version.
+##' version of the existing BackwardElim function.This is probably the more
+##' traditional version of Backward Elimination, so it's likely going to be
+##' more useful than my previous version.
 ##' 
 ##' @param data like always, it's a data frame containing your data.
 ##' 
@@ -18,14 +17,14 @@
 ##' @param evalType a string containing either 'Ar2', 'AIC', or 'BIC'
 ##'                 corresponding to the evaluation criterion you'd 
 ##'                 like to use when evaluating model fitness,
-##'                 defaults to \code{Adjusted R^2}.
+##'                 defaults to \code{Adjusted R^2}, 'Ar2'.
 ##' 
 ##' @param makeModels a boolean that determines whether or not this function
 ##'        leaves all the models it makes in your workspace or not.
 ##'        \code{TRUE} by default.
 ##'
 ##' @param suppressOutput a boolean that you can use to stop the program
-##'        from blowin' up yo console... \code{FALSE} by default.
+##'        from blowin' up yo console. \code{FALSE} by default.
 ##'
 ##'
 ##' @return a list of linear models, all the best found while using

@@ -27,6 +27,7 @@
 ##' @return a list of 'lm' objects, or nothing, depending on the value
 ##'         passed to the argument makeModels.
 ##'
+##' @author Ben Clark
 ##'
 
 ForwardSelect <- function(data, response, evalType = 'Ar2',

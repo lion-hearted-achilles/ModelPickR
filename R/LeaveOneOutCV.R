@@ -5,9 +5,7 @@
 ##'
 ##' This function just takes a data set and a linear model and calculates
 ##' the mean squared prediction error using the Leave-One-Out Cross Validation
-##' algorithm.
-##' 
-##' Note to self, I used this algorithm and compared it to answers provided
+##' algorithm. Note to self, I used this algorithm and compared it to answers provided
 ##' to practice questions in my STAT406 course, and I got the same answers!
 ##' I think I trust this function thoroughly...
 ##'
