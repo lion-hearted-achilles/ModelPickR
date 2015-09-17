@@ -1,0 +1,11 @@
+Package: ModelPickR
+Type: Package
+Title: A Collection of Convenient Functions to Assist with Variable Selection
+Version: 0.9.9
+Date: 2015-09-14
+Author: Ben Clark
+Maintainer: <ben.clark456@gmail.com>
+Description: This package is just going to have a wee little collection of
+             functions to help speed up model building and variable
+             selection in linear regression...
+License: Use this for whatever you'd like...
